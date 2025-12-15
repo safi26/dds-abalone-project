@@ -18,28 +18,43 @@
 <body>
 
 <div class="container py-5">
-    <header class="pb-3 mb-4 border-bottom">
+    <header class="pb-3 mb-4 border-bottom d-flex justify-content-between align-items-center">
         <span class="fs-4">DDS DS 6306 Project 2: Abalone Age</span>
+        <span class="text-end" style="font-size: 1rem; color: #6c757d;">
+            Muskan Mahees &nbsp;|&nbsp; Safi Muhammad
+        </span>
+        <span>Final Submission: Sunday, December 14, 2025</span>
     </header>
 
     <div class="p-5 mb-4 bg-light rounded-3">
         <div class="container-fluid py-5">
-            <h1 class="display-5 fw-bold">About Abalone</h1>
-            <p class="col-md-8 fs-4">Abalone are marine snails in the family Haliotidae. Their shells have a low, open spiral structure and are characterized by respiratory pores. The inner layer is composed of nacre (mother-of-pearl), making them highly valued for jewelry and decoration.</p>
+            <div class="row align-items-center">
+                <div class="col-md-4 mb-3 mb-md-0">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/e/ee/Awabi_02.JPG"
+                         alt="Abalone (Awabi) shell"
+                         class="img-fluid rounded"
+                         style="max-width:100%; height:auto;">
+                    <p class="small text-muted mt-2 mb-0">Image source: <a href="https://commons.wikimedia.org/wiki/File:Awabi_02.JPG" target="_blank" rel="noopener">Wikimedia Commons</a></p>
+                </div>
+                <div class="col-md-8">
+                    <h1 class="display-5 fw-bold">About Abalone</h1>
+                    <p class="fs-4">Abalone are marine snails in the family Haliotidae. Their shells have a low, open spiral structure and are characterized by respiratory pores. The inner layer is composed of nacre (mother-of-pearl), making them highly valued for jewelry and decoration.</p>
+                </div>
+            </div>
         </div>
     </div>
 
     <div class="row align-items-md-stretch">
         <div class="col-md-6">
             <div class="h-100 p-5 text-bg-dark rounded-3">
-                <h2>Objective A</h2>
+                <h2>Objective A: Develop a Predictive Model</h2>
 <!--                <p>This project aims to analyze physical measurements of abalone to predict their age. By studying parameters like length, diameter, height, and weight, we can estimate the number of rings in the shell, which correlates directly with age.</p>-->
             <p>The primary objective is to develop a robust predictive model that accurately predicts abalone age based on various features. We aim to achieve the lowest possible Mean Absolute Error (MAE) on the test set, ensuring high precision in our predictions</p>
             </div>
         </div>
         <div class="col-md-6">
             <div class="h-100 p-5 text-bg-dark rounded-3">
-                <h2>Objective B</h2>
+                <h2>Objective B: Analyze Relationships between Characteristics</h2>
                 <!--                <p>This project aims to analyze physical measurements of abalone to predict their age. By studying parameters like length, diameter, height, and weight, we can estimate the number of rings in the shell, which correlates directly with age.</p>-->
                 <p>Beyond prediction, this project aims to delve into the dataset to identify the key determinants of abalone age.</p>
                 <p>By analyzing the relationships between various abalone metrics and age, we can provide valuable insights to help scientists understand their growth rate, reproductive cycles, and lifespan which can help commercial markets as well as scientific studied into climate change, effects of ocean pollution, shifts in predatory trends, etc</p>
@@ -68,6 +83,7 @@
         <div class="col-md-6">
             <div class="h-100 p-5 bg-light border rounded-3" style="height: 100%;">
                 <h2>Interactive RAG View</h2>
+                <p>Hosted on HuggingFace Spaces using Gradio</p>
                 <p>HuggingFace container sleeps after 48 hours of inactivity. Please allow a few minutes to load the responses.</p>
                 <!-- Iframe Container with 16:9 Aspect Ratio -->
                 <div class="ratio ratio-16x9 mt-3">
